@@ -1,0 +1,49 @@
+.logoContainer {
+    justify-content: right;
+    flex-basis: 10%;
+    margin: 10px 0 0 15px;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vw;
+    top: 0;
+    background-image: linear-gradient(
+            to bottom,
+            #a20d0d,
+            #651865
+    );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 12px;
+    justify-content: center;
+    flex-basis: 90%;
+    margin: auto 0 auto 0;
+}
+
+.navList li a {
+    color: #d3c1c1;
+    font-weight: bolder;
+    margin: 0 10px;
+}
+
+.navList li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+.userProfileContainer {
+    flex-basis: 10%;
+    margin: auto 0 auto auto;
+}
+
+.icon {
+    margin-left: 10px;
+}

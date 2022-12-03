@@ -1,0 +1,12 @@
+.tableContainer {
+    margin: 0 40px;
+    overflow: scroll;
+    width: auto;
+}
+
+h1 {
+    margin: 30px 20px;
+    text-align: center;
+    font-size: large;
+    color: #484343;
+}
