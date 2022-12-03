@@ -1,6 +1,6 @@
 import MUITable from "../components/MUITable";
 
-const TaskOverview = () => {
+const HousesOverview = () => {
     return (
         <>
             <h1>Managed houses</h1>
@@ -9,4 +9,4 @@ const TaskOverview = () => {
     )
 }
 
-export default TaskOverview;
+export default HousesOverview;

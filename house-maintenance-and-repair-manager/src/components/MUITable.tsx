@@ -7,8 +7,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import {Link} from "react-router-dom";
+import login from "../pages/Login";
 
 function createData(
+    id: number,
     name: any,
     openTasks: number,
     nextDeadline: Date
@@ -17,9 +19,9 @@ function createData(
 }
 
 const rows = [
-    createData(<Link to='/'>Beder huset</Link>, 21, new Date()),
-    createData(<Link to='/'>Sommerhuset</Link>, 3, new Date(2024, 11, 28)),
-    createData(<Link to='/'>Kolonihaven</Link>, 12, new Date())
+    createData(1, <Link to={`/house/${1}`}>Beder huset</Link>, 21, new Date()),
+    createData(2, <Link to={`/house/${2}`}>Sommerhuset</Link>, 3, new Date(2024, 11, 28)),
+    createData(3, <Link to={`/house/${3}`}>Kolonihaven</Link>, 12, new Date())
 ];
 
 export default function MUITable() {
@@ -36,7 +38,7 @@ export default function MUITable() {
                 <TableBody>
                     {rows.map((row) => (
                         <TableRow
-                            key={row.name}
+                            key={row.name.props.children}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                             <TableCell component="th" scope="row">
