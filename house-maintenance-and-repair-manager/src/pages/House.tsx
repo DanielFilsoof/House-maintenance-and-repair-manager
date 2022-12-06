@@ -10,4 +10,18 @@ const House = () => {
     )
 }
 
+interface IHouse {
+    id: number,
+    name: string,
+    tasks: ITask[]
+}
+
+interface ITask {
+    id: number,
+    created: Date,
+    dueDate: Date,
+    title: string,
+    description: string
+}
+
 export default House;
