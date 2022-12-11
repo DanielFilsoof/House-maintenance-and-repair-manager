@@ -1,12 +1,14 @@
 import {useParams} from "react-router-dom";
 
 const House = () => {
-    const houseId = useParams();
+    const params = useParams();
 
     // TODO: fetch house details
-
+    console.log(params.id)
     return (
-        <></>
+        <div className='house-container'>
+
+        </div>
     )
 }
 
