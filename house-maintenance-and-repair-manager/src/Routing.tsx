@@ -4,6 +4,7 @@ import HousesOverview from './pages/HousesOverview';
 import Login from './pages/Login';
 import PageTemplate from './pages/PageTemplate';
 import House from './pages/House';
+import Task from './pages/Task';
 
 function Routing() {
     return (
@@ -13,6 +14,7 @@ function Routing() {
                     <Route index element={<HousesOverview />} />
                     <Route path="login" element={<Login />} />
                     <Route path="house/:id" element={<House />} />
+                    <Route path="task/:id" element={<Task />} />
                 </Route>
             </Routes>
         </BrowserRouter>

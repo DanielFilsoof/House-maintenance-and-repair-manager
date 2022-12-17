@@ -44,7 +44,8 @@ interface IHouse {
     tasks: ITask[];
 }
 
-interface ITask {
+// TODO abstract exported types and interfaces
+export interface ITask {
     id: number;
     created: Date;
     dueDate: Date;
