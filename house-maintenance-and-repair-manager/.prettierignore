@@ -1,0 +1,5 @@
+# ignore
+public
+dist
+.idea
+.gitignore
