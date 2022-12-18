@@ -1,7 +1,9 @@
 .logoContainer {
-    justify-content: right;
-    flex-basis: 10%;
-    margin: 10px 0 0 15px;
+    display: flex;
+    filter: invert(90%);
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
 }
 
 .headerContainer {
@@ -9,36 +11,24 @@
     flex-direction: row;
     min-width: 100vw;
     top: 0;
-    background-image: linear-gradient(to bottom, #a20d0d, #651865);
-}
-
-.navList {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style: none;
-    gap: 12px;
-    justify-content: center;
-    flex-basis: 90%;
-    margin: auto 0 auto 0;
-}
-
-.navList li a {
-    color: #d3c1c1;
-    font-weight: bolder;
-    margin: 0 10px;
-}
-
-.navList li:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    background-color: #4b3f3f;
 }
 
 .userProfileContainer {
-    flex-basis: 10%;
-    margin: auto 0 auto auto;
+    display: flex;
+    margin: auto 0 auto 0;
+    flex-basis: 1%;
+    justify-content: right;
 }
 
 .icon {
-    margin-left: 10px;
+}
+
+.logoText {
+    color: #000;
+    margin-left: 4px;
+}
+
+* {
+    border: 1px solid white
 }

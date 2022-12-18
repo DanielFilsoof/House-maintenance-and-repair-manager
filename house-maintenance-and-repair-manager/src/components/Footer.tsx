@@ -3,6 +3,7 @@ import classes from './footer.module.css';
 const Footer = () => {
     return (
         <footer className={classes.footerContainer}>
+            <hr/>
             <div className={classes.containerRow}>
                 <div className={classes.containerColumn}>
                     <ul>

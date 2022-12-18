@@ -2,7 +2,6 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #bba7a7;
     margin: 50px 0 0 0;
     padding: 0;
     height: 200px;
@@ -32,15 +31,21 @@
     margin-top: 18px;
     list-style: none;
     color: #363131;
+    padding: 0 5px;
 }
 
 .containerColumn li:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    background-color: #4b3f3f;
+    border-radius: 12px;
+    opacity: 0.8;
+    color: #fff;
+    width: fit-content;
+    cursor: pointer;
 }
 
 .containerCreaterInfo {
-    background-color: #981616;
+    background-color: #4b3f3f;
     padding: 8px;
     font-size: 15px;
 }
+

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import classes from './header.module.css';
 import logo from '../assets/home-repair-symbol.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimneyUser } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -10,25 +10,19 @@ const Header = () => {
             <div className={classes.logoContainer}>
                 <Link to={'/'}>
                     <img
+
                         src={logo}
-                        height="80px"
-                        width="80px"
-                        alt="websites logo"
+                        height="60px"
+                        width="60px"
+                        alt="website's logo"
                     />
                 </Link>
+                <p className={classes.logoText}>House Repair <br/> Management</p>
             </div>
-            <ul className={classes.navList}>
-                <li>
-                    <Link to="/">Houses</Link>
-                </li>
-                <li>
-                    <Link to="/">History</Link>
-                </li>
-            </ul>
             <div className={classes.userProfileContainer}>
                 <FontAwesomeIcon
                     className={`fa-2x ${classes.icon}`}
-                    icon={faUser}
+                    icon={faHouseChimneyUser}
                 />
             </div>
         </nav>
