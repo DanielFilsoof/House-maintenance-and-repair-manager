@@ -4,6 +4,12 @@
     flex-direction: row;
     flex-basis: 100%;
     justify-content: center;
+    margin: 0 auto;
+}
+
+.logoText {
+    color: #000;
+    margin: auto 0 auto 4px;
 }
 
 .headerContainer {
@@ -16,19 +22,10 @@
 
 .userProfileContainer {
     display: flex;
-    margin: auto 0 auto 0;
-    flex-basis: 1%;
+    margin: auto 30px auto 0;
+    flex-basis: 10%;
     justify-content: right;
 }
 
 .icon {
-}
-
-.logoText {
-    color: #000;
-    margin-left: 4px;
-}
-
-* {
-    border: 1px solid white
 }

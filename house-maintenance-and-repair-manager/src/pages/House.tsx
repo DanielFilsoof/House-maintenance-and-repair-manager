@@ -1,5 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import MUITable, { ITable, ITableRow } from '../components/MUITable';
+import CreateBtn from '../components/CreateBtn';
+import login from './Login';
 
 const House = () => {
     const params = useParams();
@@ -33,6 +35,9 @@ const House = () => {
     return (
         <div className="house-container">
             <h1>{`${house.name}: Tasks`}</h1>
+            <CreateBtn
+                label={'Add task'}
+                onClick={() => console.log('add task clicked')}/>
             <MUITable titles={titles} rows={rows} />
         </div>
     );

@@ -1,0 +1,14 @@
+.createButton {
+    background-color: #4b3f3f;
+    color: #fff;
+    margin: 0 40px 10px auto;
+    display: block;
+}
+
+.createButton:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    margin-right: 5px;
+}

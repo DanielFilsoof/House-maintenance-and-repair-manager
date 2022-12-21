@@ -7,10 +7,12 @@ import { faHouseChimneyUser } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     return (
         <nav className={classes.headerContainer}>
+            <div className={classes.userProfileContainer}>
+
+            </div>
             <div className={classes.logoContainer}>
                 <Link to={'/'}>
                     <img
-
                         src={logo}
                         height="60px"
                         width="60px"

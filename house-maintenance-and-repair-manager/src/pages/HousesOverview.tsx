@@ -1,10 +1,14 @@
 import MUITable, { ITable } from '../components/MUITable';
 import { Link } from 'react-router-dom';
+import CreateBtn from '../components/CreateBtn';
 
 const HousesOverview = () => {
     return (
         <>
             <h1>Managed houses</h1>
+            <CreateBtn
+                label={'Add house'}
+                onClick={() => console.log('add house clicked')} />
             <MUITable titles={tableData.titles} rows={tableData.rows} />
         </>
     );
